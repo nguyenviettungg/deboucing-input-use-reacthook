@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// import Accordion from "./components/Accordion";
+import Search from "./components/Search";
+
+// const items = [
+//   {
+//     title: "what is react ?",
+//     content: "React is front end js framework",
+//   },
+//   {
+//     title: "hwy use react ?",
+//     content: "react is a favorite js library among engineers",
+//   },
+//   {
+//     title: "how do you use react ?",
+//     content: "you use react by creating components",
+//   },
+// ];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ui container" style={{ marginTop: "20px" }}>
+      <Search />
     </div>
   );
 }
